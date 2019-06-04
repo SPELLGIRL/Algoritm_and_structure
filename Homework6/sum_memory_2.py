@@ -44,5 +44,6 @@ def sum_memory(objects):
             print(f'переменная {key} класса {type(value)} хранит {value} '
                   f'и занимает {sys.getsizeof(value)} байт')
 
-    return sum_mem
+    return f'Общее значение = {sum_mem} байт(а)'
+
 # Версия Python 3.7 Windows 10 / 64-разрядная ОС

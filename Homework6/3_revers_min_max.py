@@ -18,7 +18,7 @@ SIZE = 10
 MIN_ITEM = -100
 MAX_ITEM = 100
 array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
-print(array)
+print(f'Произвольный массив:\n{array}')
 
 idx_min = 0
 idx_max = 0
@@ -31,8 +31,10 @@ print(f'Min = {array[idx_min]} в ячейке {idx_min};\n'
       f'Max = {array[idx_max]} в ячейке {idx_max}')
 
 array[idx_min], array[idx_max] = array[idx_max], array[idx_min]
-print(array)
+print(f'Полученный массив:\n{array}')
 
-print(locals())  # функция, которая возвращает словарь, содержащий ВСЕ локальные объекты
-print('*' * 50)
+print(f'Все локальные объекты:\n{locals()}')  # функция, которая возвращает словарь, содержащий ВСЕ локальные объекты
+print('=' * 50)
 print(sum_memory(locals()))
+
+# Версия Python 3.7 Windows 10 / 64-разрядная ОС

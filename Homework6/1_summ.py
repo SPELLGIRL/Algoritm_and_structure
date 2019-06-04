@@ -42,3 +42,5 @@ print(f'Произведение цифр числа = {mult}')
 sum_mem = sum_memory.SumMemory()
 sum_mem.extend(num, summa, mult, i)
 sum_mem.print_sum()
+
+# Версия Python 3.7 Windows 10 / 64-разрядная ОС
